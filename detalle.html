@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consulta las características de tu diseño de uñas favorito.">
+  <title>Detalle | naylssmx</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container contenedor">
+        <a class="navbar-brand marca" href="index.html">naylssmx ♡</a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-md-center gap-md-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="explorar.html">Explorar</a></li>
+            <li class="nav-item"><a class="nav-link" href="explorar.html#guardados">Guardados <span class="badge-favoritos">0</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="detalle-main">
+    <div class="container contenedor">
+      <a class="volver" href="explorar.html">← Volver a explorar</a>
+      <section class="row g-3 align-items-stretch">
+        <div class="col-lg-5"><img class="detalle-imagen" id="imagenDetalle" src="" alt=""></div>
+        <div class="col-lg-5">
+          <article class="detalle-info">
+            <p class="etiqueta">Detalle del diseño</p>
+            <h1 id="nombreDetalle"></h1>
+            <p id="descripcionDetalle"></p>
+            <dl class="datos">
+              <div><dt>Color</dt><dd id="colorDetalle"></dd></div>
+              <div><dt>Estilo</dt><dd id="estiloDetalle"></dd></div>
+              <div><dt>Forma</dt><dd id="formaDetalle"></dd></div>
+              <div><dt>Largo</dt><dd id="largoDetalle"></dd></div>
+            </dl>
+            <section class="paleta"><h2>Paleta del diseño</h2><div id="paletaDetalle"></div></section>
+            <section class="ocasiones"><h2>Ideal para</h2><span>Evento</span><span>Cita</span><span>Diario</span></section>
+            <button class="btn-vino w-100 mt-4" id="guardarDetalle" type="button">♡ Guardar diseño</button>
+          </article>
+        </div>
+        <div class="col-lg-2">
+          <aside class="pedido">
+            <h2>Llévalo con naylssmx</h2>
+            <p>Personaliza el color, la forma y el largo.</p>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Comenzar pedido</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="similares">
+        <h2 class="titulo-seccion">Diseños similares</h2>
+        <div class="row g-3" id="similares"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="container contenedor d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <strong>naylssmx ♡</strong>
+      <div class="d-flex gap-4"><a href="index.html">Inicio</a><a href="explorar.html">Explorar</a><a href="explorar.html#guardados">Guardados</a></div>
+      <small>Uñas que inspiran.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="detalle.js"></script>
+</body>
+</html>

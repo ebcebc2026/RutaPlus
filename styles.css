@@ -1,0 +1,51 @@
+:root{
+  --vino:#6f1530;--vino-oscuro:#501023;--rosa:#f2d6d4;--rosa-claro:#fbefec;
+  --crema:#fffaf5;--texto:#241b1d;--gris:#786d70;--linea:#eaded9;--blanco:#fff
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--texto);background:var(--crema);font-family:"DM Sans",sans-serif}
+h1,h2,h3,.marca{font-family:"Playfair Display",serif}
+.contenedor{max-width:1160px}
+.encabezado{position:sticky;top:0;z-index:1000;background:rgba(255,250,245,.95);border-bottom:1px solid var(--linea);backdrop-filter:blur(12px)}
+.navbar{min-height:76px}.marca{color:var(--vino);font-size:1.8rem;font-weight:600}.marca:hover{color:var(--vino-oscuro)}
+.nav-link{color:var(--gris);font-size:.87rem}.nav-link:hover,.nav-link.active{color:var(--vino)}
+.badge-favoritos{display:inline-grid;min-width:19px;height:19px;margin-left:3px;place-items:center;color:#fff;background:var(--vino);border-radius:50%;font-size:.62rem}
+.etiqueta{margin-bottom:14px;color:var(--vino);font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.btn-vino,.btn-contorno{display:inline-flex;min-height:48px;padding:0 22px;align-items:center;justify-content:center;gap:10px;border-radius:4px;font-size:.84rem;text-decoration:none;transition:.2s}
+.btn-vino{color:#fff;background:var(--vino);border:1px solid var(--vino)}.btn-vino:hover{color:#fff;background:var(--vino-oscuro);transform:translateY(-2px)}
+.btn-contorno{color:var(--vino);background:transparent;border:1px solid var(--vino)}.btn-contorno:hover,.btn-contorno.guardado{color:var(--vino);background:var(--rosa)}
+.hero{position:relative;overflow:hidden;padding:clamp(60px,8vw,105px) 0;background:linear-gradient(120deg,var(--rosa-claro),var(--rosa))}
+.hero h1{margin-bottom:20px;color:var(--vino-oscuro);font-size:clamp(3.4rem,7vw,6.3rem);line-height:.94;letter-spacing:-.055em}
+.hero h1 em{font-weight:600}.texto-intro{max-width:520px;margin-bottom:30px;color:#615357;font-size:1.08rem;line-height:1.7}
+.hero-imagen{position:relative;width:min(390px,86%);margin:auto}.hero-imagen:before{position:absolute;inset:20px -22px -20px 22px;background:rgba(111,21,48,.13);border-radius:190px 190px 18px 18px;content:""}
+.hero-imagen img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border:6px solid rgba(255,255,255,.65);border-radius:190px 190px 18px 18px;box-shadow:0 24px 60px rgba(80,16,35,.16)}
+.hero-imagen span{position:absolute;right:-28px;bottom:35px;padding:13px;color:var(--vino);background:rgba(255,255,255,.9);border-radius:8px;font-family:"Playfair Display",serif;font-style:italic;transform:rotate(-3deg)}
+.seccion{padding:clamp(72px,9vw,116px) 0}.titulo-seccion{margin-bottom:28px;color:var(--vino-oscuro);font-size:clamp(2.2rem,4vw,3.5rem);letter-spacing:-.04em}
+.foto-destacada{position:relative;overflow:hidden;height:100%;min-height:440px;border-radius:8px}.foto-destacada img{width:100%;height:100%;object-fit:cover}
+.insignia{position:absolute;top:18px;left:18px;z-index:2;padding:7px 12px;color:var(--vino);background:rgba(255,255,255,.92);border-radius:50px;font-size:.65rem;font-weight:600}
+.detalle-destacado,.detalle-info{height:100%;padding:clamp(28px,5vw,55px);background:var(--rosa-claro);border-radius:8px}
+.detalle-destacado h3,.detalle-info h1{color:var(--vino-oscuro);font-size:clamp(2.5rem,5vw,4rem);line-height:1}.detalle-destacado>p,.detalle-info>p{color:var(--gris);line-height:1.7}
+.datos{display:grid;grid-template-columns:repeat(2,1fr);margin:25px 0;gap:10px}.datos div{padding:11px 13px;background:rgba(255,255,255,.65);border:1px solid var(--linea);border-radius:5px}
+.datos dt{color:#9a7d85;font-size:.62rem;text-transform:uppercase}.datos dd{margin:2px 0 0;color:var(--vino);font-family:"Playfair Display",serif;text-transform:capitalize}
+.como-funciona{padding:clamp(70px,8vw,100px) 0;background:#fff;border-block:1px solid var(--linea)}
+.paso{height:100%;padding:30px;background:var(--crema);border:1px solid var(--linea);border-radius:8px}.paso>span{display:grid;width:45px;height:45px;margin-bottom:20px;place-items:center;color:var(--vino);background:var(--rosa);border-radius:50%;font-family:"Playfair Display",serif;font-size:1.3rem}
+.paso h3{color:var(--vino-oscuro)}.paso p{margin:0;color:var(--gris);font-size:.88rem;line-height:1.65}
+.cabecera-pagina{padding:65px 0 35px;background:var(--rosa-claro)}.cabecera-pagina h1{color:var(--vino-oscuro);font-size:clamp(3rem,6vw,5rem)}.cabecera-pagina>div>p:not(.etiqueta){color:var(--gris)}
+.buscador{display:flex;width:min(100%,560px);margin-top:25px;padding:5px;background:#fff;border:1px solid var(--linea);border-radius:6px}.buscador input{flex:1;min-width:0;padding:10px 14px;border:0;outline:0}.buscador button{padding:10px 20px;color:#fff;background:var(--vino);border:0;border-radius:4px}
+.panel-filtros{position:sticky;top:100px;padding:24px;background:var(--rosa-claro);border:1px solid var(--linea);border-radius:8px}.panel-filtros h2{color:var(--vino-oscuro);font-size:1.6rem}.panel-filtros label{display:block;margin-bottom:6px;color:var(--gris);font-size:.7rem;font-weight:600;text-transform:uppercase}
+.panel-filtros select{width:100%;padding:10px;background:#fff;border:1px solid var(--linea);border-radius:4px}.enlace-boton{padding:0;color:var(--vino);background:none;border:0;font-size:.76rem;text-decoration:underline}
+.barra-resultados{display:flex;justify-content:space-between;margin-bottom:15px;color:var(--gris);font-size:.75rem}
+.tarjeta{position:relative;height:100%}.imagen-tarjeta{position:relative;overflow:hidden;border-radius:7px}.imagen-tarjeta img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .35s}.tarjeta:hover img{transform:scale(1.035)}
+.guardar{position:absolute;top:10px;right:10px;display:grid;width:35px;height:35px;place-items:center;color:var(--vino);background:rgba(255,255,255,.92);border:0;border-radius:50%}.guardar.activo{color:#fff;background:var(--vino)}
+.tarjeta a{color:inherit;text-decoration:none}.tarjeta h3{margin:11px 0 3px;color:var(--vino-oscuro);font-size:1.05rem}.tarjeta p{margin:0;color:var(--gris);font-size:.68rem;text-transform:capitalize}
+.vacio{padding:45px 20px;color:var(--gris);background:var(--rosa-claro);border-radius:8px;text-align:center}.guardados{scroll-margin-top:76px;padding:80px 0;background:#fff;border-top:1px solid var(--linea)}
+.contador{display:inline-grid;min-width:32px;height:32px;place-items:center;color:#fff;background:var(--vino);border-radius:50%;font-family:"DM Sans",sans-serif;font-size:.75rem;vertical-align:middle}
+.detalle-main{padding:50px 0 90px}.volver{display:inline-block;margin-bottom:25px;color:var(--vino);text-decoration:none}.detalle-imagen{width:100%;height:100%;min-height:580px;object-fit:cover;border-radius:8px}
+.paleta,.ocasiones{margin-top:22px}.paleta h2,.ocasiones h2{color:var(--vino-oscuro);font-size:1.2rem}.muestra{display:inline-flex;margin-right:15px;align-items:center;gap:7px;color:var(--gris);font-size:.7rem}.muestra i{display:block;width:28px;height:28px;border:1px solid var(--linea);border-radius:50%}
+.ocasiones span{display:inline-block;margin-right:6px;padding:6px 13px;color:var(--vino);background:var(--rosa);border-radius:50px;font-size:.7rem}
+.pedido{height:100%;padding:26px 20px;color:var(--vino-oscuro);background:var(--rosa);border-radius:8px}.pedido h2{font-size:1.8rem}.pedido p{color:#6f515a;font-size:.82rem}.pedido a{display:block;padding:10px;color:#fff;background:var(--vino);border-radius:4px;text-align:center;text-decoration:none;font-size:.75rem}
+.similares{padding-top:80px}.similar img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px}.similar a{color:inherit;text-decoration:none}.similar h3{margin-top:9px;color:var(--vino-oscuro);font-size:1rem}
+.pie{padding:35px 0;color:#ead7dc;background:var(--vino-oscuro)}.pie strong{display:block;color:#fff;font-family:"Playfair Display",serif;font-size:1.5rem}.pie small{color:#cdb1b9}.pie a{color:#ead7dc;font-size:.78rem;text-decoration:none}.pie a:hover{color:#fff}
+@media(max-width:991.98px){.hero-imagen{margin-top:45px}.panel-filtros{position:static;margin-bottom:24px}.detalle-imagen{min-height:440px}.pedido{margin-top:12px}}
+@media(max-width:767.98px){.navbar-collapse{padding:14px 0}.hero h1{font-size:3.5rem}.hero-imagen span{right:0}.barra-resultados{display:block}.detalle-info{margin-top:12px}.pie{text-align:center}}
